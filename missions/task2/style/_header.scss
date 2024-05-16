@@ -1,0 +1,86 @@
+body {
+    header {
+        background-color: white;
+        box-shadow: 0px 5px 10px -3px rgba(4, 4, 83, 0.2);;
+
+        display: flex;
+
+        position: sticky;
+        top: 0;
+
+        section.logo {
+            width: 90px;
+            height: 40px;
+            margin: 28px 15vw;
+        }
+        nav {
+            margin: 32px;
+            ul {
+                display: flex;
+                gap: 40px;
+                li {
+                    padding: 4px 8px;
+                    list-style: none;
+                    #currPage {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        padding-bottom: 5px;
+                        box-shadow: 0px 5px aqua;
+                    }
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        transition: all 0.2s ease;
+                        &:hover {
+                            font-size: 1.1em;
+                            font-weight: bold;
+                            padding-bottom: 5px;
+                            box-shadow: 0px 5px aqua;
+                        }
+                    }
+                }
+            }
+        }
+        .hamBar {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    body {
+        header {
+            // position: relative;
+            // justify-content: center;
+            nav {
+                display: none;
+                // margin: 0 !important;
+                // position: absolute;
+                // top: 96px;
+                
+                // ul {
+                //     flex-direction: column;
+                //     gap: 10px !important;
+                //     a {
+                //         display: flex;
+                //         justify-content: center;
+                //     }
+                // }
+            }
+            .hamBar {
+                display: flex !important;
+                margin-left: auto;
+                margin-right: 10vw;
+                margin-top: 28px;
+        
+                color: black;
+                font-size: 40px;
+                text-decoration: none;
+            }
+            // .hamBar.active + nav ul {
+            //     display: flex; /* 當漢堡選單被點擊時，顯示 ul 清單 */
+            //     flex-direction: column;
+            // }
+        }
+    }
+}

@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+body header {
+  background-color: white;
+  box-shadow: 0px 5px 10px -3px rgba(4, 4, 83, 0.2);
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+body header section.logo {
+  width: 90px;
+  height: 40px;
+  margin: 28px 15vw;
+}
+body header nav {
+  margin: 32px;
+}
+body header nav ul {
+  display: flex;
+  gap: 40px;
+}
+body header nav ul li {
+  padding: 4px 8px;
+  list-style: none;
+}
+body header nav ul li #currPage {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 5px;
+  box-shadow: 0px 5px aqua;
+}
+body header nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body header nav ul li a:hover {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 5px;
+  box-shadow: 0px 5px aqua;
+}
+body header .hamBar {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  body header nav {
+    display: none;
+  }
+  body header .hamBar {
+    display: flex !important;
+    margin-left: auto;
+    margin-right: 10vw;
+    margin-top: 28px;
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+  }
+}
+body footer {
+  background-image: url("../assets/PC/footer-bg-lg.png");
+  padding: 80px 15vw;
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+body footer .logo {
+  width: 300px;
+}
+body footer .logo img {
+  width: 120px;
+  height: auto;
+}
+body footer .logo h3 {
+  margin: 24px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+body footer .logo a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #919191;
+  text-decoration: none;
+}
+body footer .links {
+  margin-left: auto; /* 右對齊 */
+}
+body footer .links .links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body footer .links .links-list li {
+  list-style: none;
+}
+body footer .links .links-list li a {
+  text-decoration: none;
+}
+body footer .links .links-list li a #form {
+  background-color: black;
+  transition: all 0.2s ease;
+}
+body footer .links .links-list li a #form p {
+  color: white;
+}
+body footer .links .links-list li a #form:hover {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+}
+body footer .links .links-list li a .link {
+  background-color: white;
+  border: 1px solid #C1C1C1;
+  border-radius: 8px;
+  width: 306px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  transition: all 0.2s ease;
+}
+body footer .links .links-list li a .link p {
+  color: black;
+  display: inline-grid;
+  text-align: center;
+  justify-items: center;
+  margin: 21px 0;
+}
+body footer .links .links-list li a .link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body main section.workcards {
+  display: flex;
+  justify-content: center;
+}
+body main section.workcards div.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 80px;
+}
+body main section.workcards div.cards div.card div.image img {
+  width: 100%;
+  border-radius: 5px;
+}
+body main section.workcards div.cards div.card div.info {
+  margin: 16px;
+}
+body main section.workcards div.cards div.card div.info p.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+body main section.workcards div.cards div.card div.info p.detail {
+  font-size: 16px;
+  color: #919191;
+}
+body main section.workcards div.cards div.card div.tags {
+  margin-top: 8px;
+  margin: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body main section.workcards div.cards div.card div.tags a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  padding: 4px 12px;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 1298px) {
+  body main section.workcards div.cards {
+    max-width: 100%;
+    margin: 0 12px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 48px;
+  }
+  body main section.workcards div.cards div.card {
+    min-width: 351px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  body main section.workcards div.cards div.card div.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  body main section.workcards div.cards div.card div.info {
+    width: 100%;
+  }
+  body main section.workcards div.cards div.card div.tags a {
+    margin-right: 8px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+body {
+    main {
+        section.workcards {
+            // width: 1920px;
+            display: flex;
+            justify-content: center;
+            div.cards {
+                // margin: 120px 312px 232px 312px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-column-gap: 24px;
+                grid-row-gap: 80px;
+                
+                div.card {
+                    div.image {
+                        img {
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                    }
+                    div.info {
+                        margin: 16px;
+                        p.title {
+                            font-size: 28px;
+                            margin-bottom: 8px;
+                            // font-weight: bold;
+                        }
+                        p.detail {
+                            font-size: 16px;
+                            color: #919191;
+                        }
+                    }
+                    div.tags {
+                        margin-top: 8px;
+                        margin: 0 16px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        a {
+                            color: black;
+                            text-decoration: none;
+                            text-align: center;
+                            background-color: #f1f1f1;
+                            border-radius: 16px;
+                            padding: 4px 12px;
+                            margin-right: 16px;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1298px) {
+    body {
+        main {
+            section.workcards {
+                div.cards {
+                    max-width: 100%;
+                    margin: 0 12px;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(6, 1fr);
+                    // grid-column-gap: 24px;
+                    grid-row-gap: 48px;
+                    div.card {
+                        min-width: 351px;
+                        max-width: 100%;
+                        margin: 0 auto;
+                        div.image{
+                            img {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 5px;
+                            }
+                        }
+                        div.info {
+                            width: 100%;
+                        }
+                        div.tags {
+                            a {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

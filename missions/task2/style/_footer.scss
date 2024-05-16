@@ -1,0 +1,76 @@
+body {
+    footer {
+        background-image: url('../assets/PC/footer-bg-lg.png');
+        padding: 80px 15vw;
+        display: flex;
+        align-items: center;
+        gap: 300px;
+
+        .logo {
+            width: 300px;
+            img {
+                width: 120px;
+                height: auto;
+            }
+            h3 {
+                margin: 24px 0;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            a {
+                font-size: 20px;
+                font-weight: 400;
+                color: #919191;
+                text-decoration: none;
+            }
+        }
+        .links {
+            margin-left: auto; /* 右對齊 */
+            .links-list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        #form {
+                            background-color: black;
+                            transition: all 0.2s ease;
+                            p {
+                                color: white;
+                            }
+                            &:hover {
+                                background-color: #000000b3;
+                            }
+                        }
+                        .link {
+                            background-color: white;
+                            border: 1px solid #C1C1C1;
+                            border-radius: 8px;
+            
+                            width: 306px;
+                            padding: 8px 24px;
+
+                            display: flex;
+                            align-items: center;
+                            gap: 13px;
+                            
+                            transition: all 0.2s ease;
+                            p {
+                                color: black;
+                                display:inline-grid;
+                                text-align: center;
+                                justify-items: center;
+                                margin: 21px 0;
+                            }
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

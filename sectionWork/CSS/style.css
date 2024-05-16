@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: right;
+}
+
+h1, h2, p {
+  line-height: 1.5;
+}
+
+span {
+  color: #cd5e3c;
+  text-decoration: underline;
+}
+
+body div.container {
+  width: 900px;
+  margin: auto;
+  background-color: #a2d7dd;
+  border-radius: 15px;
+}
+body div.container div.header {
+  background-color: white;
+  margin: auto;
+  padding: 16px 30px;
+}
+body div.container div.content {
+  margin: auto;
+  padding: 24px 30px;
+}
+body div.container div.content p.paragraph1 {
+  margin-bottom: 24px;
+  text-indent: 36px;
+}
+body div.container div.content p.paragraph2 {
+  text-indent: 36px;
+  margin-bottom: 24px;
+}
+body div.container div.content div.btn {
+  display: flex;
+  justify-content: right;
+}
+body div.container div.content div.btn a {
+  width: 120px;
+  background-color: black;
+  padding: 12px 0;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+body div.container div.content div.btn a:hover {
+  background-color: #cd5e3c;
+}/*# sourceMappingURL=style.css.map */
