@@ -23,51 +23,156 @@ body header nav ul {
 body header nav ul li {
   padding: 4px 8px;
   list-style: none;
-}
-body header nav ul li #currPage {
-  font-size: 1.1em;
-  font-weight: bold;
-  padding-bottom: 5px;
-  box-shadow: 0px 5px aqua;
+  position: relative;
 }
 body header nav ul li a {
   color: black;
   text-decoration: none;
   transition: all 0.2s ease;
 }
-body header nav ul li a:hover {
-  font-size: 1.1em;
-  font-weight: bold;
-  padding-bottom: 5px;
-  box-shadow: 0px 5px aqua;
+body header nav ul li .border {
+  position: absolute;
+  width: 8px;
+  height: 8px;
 }
-body header .hamBar {
+body header nav ul li .vec1 {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+body header nav ul li .vec2 {
+  top: 0;
+  right: 0;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+body header nav ul li .vec3 {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+body header nav ul li .vec4 {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+body header nav ul li:hover .vec1 {
+  border-top: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+body header nav ul li:hover .vec2 {
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+body header nav ul li:hover .vec3 {
+  border-bottom: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+body header nav ul li:hover .vec4 {
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+body header nav ul #currPage a {
+  font-weight: bold;
+}
+body header nav ul #currPage .vec1 {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+body header nav ul #currPage .vec2 {
+  top: 0;
+  right: 0;
+  border-top: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+body header nav ul #currPage .vec3 {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #919191;
+  border-right: 1px solid #919191;
+}
+body header nav ul #currPage .vec4 {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #919191;
+  border-left: 1px solid #919191;
+}
+body header .btn {
+  width: 56px;
+  height: 56px;
   display: none;
+  padding-top: 7px;
+  padding-right: 3px;
+}
+body header .btn .hamburger {
+  font-size: 40px;
+}
+body header .btn .close {
+  font-size: 40px;
 }
 
-@media screen and (max-width: 1020px) {
-  body header nav {
-    display: none;
+@media screen and (max-width: 900px) {
+  body header {
+    position: relative;
+    align-items: center;
   }
-  body header .hamBar {
-    display: flex !important;
+  body header nav {
+    width: 100vw;
+    background-color: #ffffff;
+    position: absolute;
+    margin: 0;
+    top: 96px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+  }
+  body header nav ul {
+    display: none;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  body header nav ul li {
+    text-align: center;
+    margin: 20px 0;
+  }
+  body header nav ul li a {
+    font-size: 20px;
+  }
+  body header .btn {
+    display: flex;
     margin-left: auto;
     margin-right: 10vw;
-    margin-top: 28px;
-    color: black;
-    font-size: 40px;
-    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 0;
+  }
+  body header .btn:hover {
+    cursor: pointer;
+  }
+  body header .btn .material-symbols-outlined {
+    /* 共用樣式 */
+  }
+  body header .btn .hamburger {
+    /* 初始顯示的樣式（菜單圖示） */
+  }
+  body header .btn .close {
+    display: none; /* 初始隱藏的樣式（關閉圖示） */
   }
 }
 body footer {
   background-image: url("../assets/PC/footer-bg-lg.png");
+  background-size: cover;
   padding: 80px 15vw;
   display: flex;
   align-items: center;
-  gap: 300px;
 }
 body footer .logo {
-  width: 300px;
+  width: 320px;
 }
 body footer .logo img {
   width: 120px;
@@ -127,9 +232,38 @@ body footer .links .links-list li a .link p {
   margin: 21px 0;
 }
 body footer .links .links-list li a .link:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.0745098039);
 }
 
+@media screen and (max-width: 900px) {
+  body footer {
+    background-image: url("../assets/phone/footer-bg-sm.png");
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body footer .logo {
+    display: flex;
+    flex-direction: column;
+    width: 240PX;
+    justify-content: center;
+  }
+  body footer .logo img {
+    margin: auto;
+  }
+  body footer .logo h3 {
+    font-size: 16px;
+    margin: 24px auto;
+  }
+  body footer .logo a {
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  body footer .links {
+    margin: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;

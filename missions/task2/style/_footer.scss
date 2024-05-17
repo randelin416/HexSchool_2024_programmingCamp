@@ -1,13 +1,14 @@
 body {
     footer {
         background-image: url('../assets/PC/footer-bg-lg.png');
+        background-size: cover;
         padding: 80px 15vw;
         display: flex;
         align-items: center;
-        gap: 300px;
+        // gap: 300px;
 
         .logo {
-            width: 300px;
+            width: 320px;
             img {
                 width: 120px;
                 height: auto;
@@ -65,11 +66,43 @@ body {
                                 margin: 21px 0;
                             }
                             &:hover {
-                                background-color: rgba(0, 0, 0, 0.1);
+                                background-color: #00000013;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        footer {
+            background-image: url('../assets/phone/footer-bg-sm.png');
+            background-size: cover;
+            flex-direction: column;
+            justify-content: center;
+            .logo {
+                display: flex;
+                flex-direction: column;
+                width: 240PX;
+                justify-content: center;
+                img { 
+                    margin: auto;
+                }
+                h3 {
+                    font-size: 16px;
+                    margin: 24px auto;
+                }
+                a {
+                    font-size: 16px;
+                    margin: auto;
+                    margin-bottom: 40px;
+                }
+            }
+            .links {
+                margin: 0;
             }
         }
     }
