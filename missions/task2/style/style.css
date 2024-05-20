@@ -283,9 +283,19 @@ body footer .links .links-list li a .link:hover {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-body main section.workcards {
+body main section.quote-area {
+  padding: 80px 0;
+}
+body main section.quote-area div.main-quote {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+body main section.quote-area div.main-quote .right-quote {
+  align-self: flex-end;
+}
+body main section.workcards {
+  padding: 120px 10vw;
 }
 body main section.workcards div.cards {
   display: grid;
@@ -304,6 +314,7 @@ body main section.workcards div.cards div.card div.info {
 body main section.workcards div.cards div.card div.info p.title {
   font-size: 28px;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 body main section.workcards div.cards div.card div.info p.detail {
   font-size: 16px;
@@ -323,6 +334,35 @@ body main section.workcards div.cards div.card div.tags a {
   border-radius: 16px;
   padding: 4px 12px;
   margin-right: 16px;
+}
+body main section.workcards .pagination {
+  padding: 72px 0 0 0;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+body main section.workcards .pagination button {
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  width: 40px;
+  height: 40px;
+  padding: 2px 13px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+body main section.workcards .pagination button:hover {
+  background-color: rgba(206, 206, 206, 0.2);
+  color: black;
+}
+body main section.workcards .pagination .currPage, body main section.workcards .pagination .currPage:hover {
+  color: white;
+  background-color: black;
 }
 
 @media screen and (max-width: 1298px) {

@@ -11,15 +11,16 @@ $(document).ready(function() {
         }
     }
 
-    checkWidth(); // 初始化检查宽度
+    checkWidth(); // 檢查視窗大小
 
     $(window).resize(function() {
-        checkWidth(); // 当窗口调整大小时再次检查
+        checkWidth();
     });
 
     $('.btn').click(function() {
-        $('.hamburger').toggle(50); // 切換菜單圖示顯示狀態
-        $('.close').toggle(50); // 切換關閉圖示顯示狀態
+        // 按下按鈕後要顯示或隱藏的部分(切換)
+        $('.hamburger').toggle(50);
+        $('.close').toggle(50);
         $('nav ul').slideToggle(300, 'swing');
         $('.filter').toggle();
     });
