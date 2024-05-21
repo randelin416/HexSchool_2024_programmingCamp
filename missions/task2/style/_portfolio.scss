@@ -8,29 +8,80 @@
 body {
     main {
         section.quote-area {
+            background-color: #FAFAFA;
             padding: 80px 0;
-            // display: flex;
-            // flex-direction: column;
+            display: flex;
+            flex-direction: column;
             // flex-wrap: wrap;
-            // justify-items: center;
+            justify-content: center;
             
             div.main-quote {
+                width: 45vw;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                .left-quote {
-                }
+                flex-direction: column;
+                margin: auto;
+                // justify-items: center;
+                // align-items: center;
                 h2 {
+                    line-height: 28.8px;
+                    font-size: 24px;
+                    font-weight: normal;
+                    text-align: center;
+                    position: relative;
+                    br {
+                        margin-bottom: 16px;
+                    }
+                    span {
+                        background: url('../assets/mark.png');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position: 100% 100%;
+                        padding-bottom: 5px;
+                        white-space: nowrap;
+                    }
+                }
+                .left-quote {
+                    align-self: flex-start;
+                    // position: absolute;
+                    // bottom: 0;
+                    // left: 0;
                 }
                 .right-quote {
                     align-self: flex-end;
                 }
                 
             }
-            // .experience {
-            //     display: flex;
-            //     justify-content: center;
-            // }
+            .experience {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                h3, h4 {
+                    text-align: center;
+                    font-weight: normal;
+                }
+                h3 {
+                    color: #5B5B5B;
+                    
+                }
+                h4 {
+                    color: #3B3B3B;
+                    // margin-top: 12px;
+                }
+                .border-bottom {
+                    margin: 4px 0 8px 0;
+                    border-bottom: 2px solid #C1C1C1;
+                    width: 24px;
+                }
+                .twoB, .twoC {
+                    width: 16vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
         }
         section.workcards {
             // width: 1920px;

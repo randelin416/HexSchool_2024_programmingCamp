@@ -284,15 +284,69 @@ body footer .links .links-list li a .link:hover {
 }
 
 body main section.quote-area {
+  background-color: #FAFAFA;
   padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 body main section.quote-area div.main-quote {
+  width: 45vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+body main section.quote-area div.main-quote h2 {
+  line-height: 28.8px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+}
+body main section.quote-area div.main-quote h2 br {
+  margin-bottom: 16px;
+}
+body main section.quote-area div.main-quote h2 span {
+  background: url("../assets/mark.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 100%;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+body main section.quote-area div.main-quote .left-quote {
+  align-self: flex-start;
 }
 body main section.quote-area div.main-quote .right-quote {
   align-self: flex-end;
+}
+body main section.quote-area .experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+body main section.quote-area .experience h3, body main section.quote-area .experience h4 {
+  text-align: center;
+  font-weight: normal;
+}
+body main section.quote-area .experience h3 {
+  color: #5B5B5B;
+}
+body main section.quote-area .experience h4 {
+  color: #3B3B3B;
+}
+body main section.quote-area .experience .border-bottom {
+  margin: 4px 0 8px 0;
+  border-bottom: 2px solid #C1C1C1;
+  width: 24px;
+}
+body main section.quote-area .experience .twoB, body main section.quote-area .experience .twoC {
+  width: 16vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main section.workcards {
   padding: 120px 10vw;
