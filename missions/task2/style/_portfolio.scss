@@ -14,9 +14,9 @@ body {
             flex-direction: column;
             // flex-wrap: wrap;
             justify-content: center;
-            
             div.main-quote {
                 width: 45vw;
+                min-width: 680px;
                 display: flex;
                 flex-direction: column;
                 margin: auto;
@@ -31,7 +31,7 @@ body {
                     br {
                         margin-bottom: 16px;
                     }
-                    span {
+                    .mark {
                         background: url('../assets/mark.png');
                         background-repeat: no-repeat;
                         background-size: 100%;
@@ -75,6 +75,7 @@ body {
                 }
                 .twoB, .twoC {
                     width: 16vw;
+                    min-width: 210px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -177,7 +178,28 @@ body {
 @media screen and (max-width: 1298px) {
     body {
         main {
+            section.quote-area {
+                .main-quote {
+                    min-width: 300px !important;
+                    div h2 {
+                        font-size: 20px;
+                        .media-screen::before {
+                            content: "\A";
+                            white-space: pre;
+                        }
+                    }
+                    img {
+                        align-self: center !important;
+                    }
+                }
+                .experience {
+                    margin: 40px 0 40px 0;
+                    flex-direction: column;
+                }
+            }
             section.workcards {
+                margin: 120px 0;
+                padding: 0;
                 div.cards {
                     max-width: 100%;
                     margin: 0 12px;

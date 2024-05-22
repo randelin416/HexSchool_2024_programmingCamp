@@ -292,6 +292,7 @@ body main section.quote-area {
 }
 body main section.quote-area div.main-quote {
   width: 45vw;
+  min-width: 680px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -306,7 +307,7 @@ body main section.quote-area div.main-quote h2 {
 body main section.quote-area div.main-quote h2 br {
   margin-bottom: 16px;
 }
-body main section.quote-area div.main-quote h2 span {
+body main section.quote-area div.main-quote h2 .mark {
   background: url("../assets/mark.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -343,6 +344,7 @@ body main section.quote-area .experience .border-bottom {
 }
 body main section.quote-area .experience .twoB, body main section.quote-area .experience .twoC {
   width: 16vw;
+  min-width: 210px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -420,6 +422,27 @@ body main section.workcards .pagination .currPage, body main section.workcards .
 }
 
 @media screen and (max-width: 1298px) {
+  body main section.quote-area .main-quote {
+    min-width: 300px !important;
+  }
+  body main section.quote-area .main-quote div h2 {
+    font-size: 20px;
+  }
+  body main section.quote-area .main-quote div h2 .media-screen::before {
+    content: "\a";
+    white-space: pre;
+  }
+  body main section.quote-area .main-quote img {
+    align-self: center !important;
+  }
+  body main section.quote-area .experience {
+    margin: 40px 0 40px 0;
+    flex-direction: column;
+  }
+  body main section.workcards {
+    margin: 120px 0;
+    padding: 0;
+  }
   body main section.workcards div.cards {
     max-width: 100%;
     margin: 0 12px;
